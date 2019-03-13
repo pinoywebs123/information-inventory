@@ -21,6 +21,10 @@ class AdminController extends Controller
     	return view('admin.product.list');
     }
 
+    public function admin_product_apparel(){
+    	return view('admin.product.apparel');
+    }
+
     public function admin_reports(){
     	return view('admin.report.list');
     }

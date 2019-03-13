@@ -2,8 +2,8 @@
 
 @section('contents')
 	<ul class="nav nav-tabs">
-	  <li class="active"><a href="{{route('admin_product')}}">General</a></li>
-	  <li><a href="{{route('admin_product_apparel')}}">Apparel</a></li>
+	  <li ><a href="{{route('admin_product')}}">General</a></li>
+	  <li class="active"><a href="{{route('admin_product_apparel')}}">Apparel</a></li>
 	  
 	</ul>
 

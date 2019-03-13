@@ -65,10 +65,14 @@ Route::group(['prefix'=> 'admin'], function(){
 		]);
 
 
-	Route::get('/product', [
+	Route::get('/product-general', [
 		'as'=> 'admin_product',
 		'uses'=> 'AdminController@admin_product'
 	]);
+		Route::get('/product-apparel', [
+			'as'=> 'admin_product_apparel',
+			'uses'=> 'AdminController@admin_product_apparel'
+		]);
 
 	Route::get('/reports', [
 		'as'=> 'admin_reports',
