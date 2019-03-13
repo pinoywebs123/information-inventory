@@ -2,7 +2,7 @@
       <div id="sidebar" class="nav-collapse ">
       
         <ul class="sidebar-menu">
-          <li class="#">
+          <li class="{{Request::segment(2) == 'home' ? 'active' : ''}}">
             <a class="" href="{{route('admin_home')}}">
                   <i class="icon_house_alt"></i>
                   <span>HOME </span>
@@ -22,14 +22,14 @@
             </ul>
           </li>
 
-          <li class="#">
+          <li class="{{Request::segment(2) == 'product-general' ? 'active' : ''}}">
             <a class="" href="{{route('admin_product')}}">
                   <i class="icon_id"></i>
                   <span>PRODUCTS </span>
             </a>
           </li>
           
-          <li class="#">
+          <li class="{{Request::segment(2) == 'reports' ? 'active' : ''}}">
             <a class="" href="{{route('admin_reports')}}">
                   <i class="icon_id"></i>
                   <span>REPORTS </span>
