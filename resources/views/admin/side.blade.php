@@ -16,21 +16,21 @@
                           <span class="menu-arrow arrow_carrot-right"></span>
                       </a>
             <ul class="sub">
-              <li><a class="" href="#">PENDING</a></li>
-              <li><a class="" href="#">APPROVED</a></li>
-              <li><a class="" href="#">ON DELIVERY</a></li>
+              <li><a class="" href="{{route('admin_order_pending')}}">PENDING</a></li>
+              <li><a class="" href="{{route('admin_order_approve')}}">APPROVED</a></li>
+              <li><a class="" href="{{route('admin_order_delivery')}}">ON DELIVERY</a></li>
             </ul>
           </li>
 
           <li class="#">
-            <a class="" href="#">
+            <a class="" href="{{route('admin_product')}}">
                   <i class="icon_id"></i>
                   <span>PRODUCTS </span>
             </a>
           </li>
           
           <li class="#">
-            <a class="" href="#">
+            <a class="" href="{{route('admin_reports')}}">
                   <i class="icon_id"></i>
                   <span>REPORTS </span>
             </a>

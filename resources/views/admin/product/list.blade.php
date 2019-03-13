@@ -1,5 +1,5 @@
 @extends('admin.template')
 
 @section('contents')
-	<h1>HOME</h1>
+	<h1>PRODUCT LIST</h1>
 @endsection

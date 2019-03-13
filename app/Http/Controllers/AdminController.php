@@ -16,4 +16,24 @@ class AdminController extends Controller
     	Auth::logout();
     	return redirect()->route('login');
     }
+
+    public function admin_product(){
+    	return view('admin.product.list');
+    }
+
+    public function admin_reports(){
+    	return view('admin.report.list');
+    }
+
+    public function admin_order_pending(){
+    	return view('admin.order.pending');
+    }
+
+    public function admin_order_approve(){
+    	return view('admin.order.approve');
+    }
+
+    public function admin_order_delivery(){
+    	return view('admin.order.delivery');
+    }
 }

@@ -51,4 +51,28 @@ Route::group(['prefix'=> 'admin'], function(){
 		'uses'=> 'AdminController@admin_logout'
 	]);
 
+		Route::get('/order-pending', [
+			'as'=> 'admin_order_pending',
+			'uses'=> 'AdminController@admin_order_pending'
+		]);
+		Route::get('/order-approve', [
+			'as'=> 'admin_order_approve',
+			'uses'=> 'AdminController@admin_order_approve'
+		]);
+		Route::get('/order-delivery', [
+			'as'=> 'admin_order_delivery',
+			'uses'=> 'AdminController@admin_order_delivery'
+		]);
+
+
+	Route::get('/product', [
+		'as'=> 'admin_product',
+		'uses'=> 'AdminController@admin_product'
+	]);
+
+	Route::get('/reports', [
+		'as'=> 'admin_reports',
+		'uses'=> 'AdminController@admin_reports'
+	]);
+
 });
